@@ -1,14 +1,13 @@
-@yield('master')
+@extends('plantilla')
 
-@section('pestaña')
-<title>Editar Alumnos</title>
-@endsection
-
-@section('titulo')
-<h1>Editar Alumnos</h1>
-@stop
+@section('titulo', 'Presentación - Santuario')
 
 @section('contenido')
-<form action="{{url('/actualizarAlumno')}}/{{$alumno->id}}"method="POST">
-</form>
-@stop
+	<div class="contenedor-imagen">
+		<img src="https://www.sinaloa360.com/wp-content/uploads/2019/07/santuario-de-culiacan-1568x1045.jpg" alt="Santuario">
+		<div class="texto">
+			Friki Plaza
+			<span>Iglesia católica en Culiacán</span>
+		</div>
+	</div>
+@endsection
